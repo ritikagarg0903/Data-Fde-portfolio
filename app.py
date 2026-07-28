@@ -579,7 +579,7 @@ def render_journey_timeline(journey: list[dict]):
                   <div class="experience-card">
                     <div class="experience-kicker">{rc["tbn_kicker"]}</div>
                     <div class="experience-title">{rc["tbn_title"]}</div>
-                    <div class="experience-meta">San Francisco, CA | Make.com, OpenAI, Google Sheets, Looker Studio</div>
+                    <div class="experience-meta">San Francisco, CA | Make.com, OpenAI, Clay, Looker Studio</div>
                     <ul class="experience-list">
                       {tbn_bullets_html}
                     </ul>
@@ -587,7 +587,7 @@ def render_journey_timeline(journey: list[dict]):
                   <div class="experience-card">
                     <div class="experience-kicker">{rc["rtds_kicker"]}</div>
                     <div class="experience-title">{rc["rtds_title"]}</div>
-                    <div class="experience-meta">Delhi, India | Salesforce, Tableau, campaign analytics</div>
+                    <div class="experience-meta">Delhi, India | Salesforce CRM, SQL, Tableau, campaign analytics</div>
                     <ul class="experience-list">
                       {rtds_bullets_html}
                     </ul>
@@ -678,15 +678,20 @@ st.markdown(
 )
 
 
-def _render_project_sales_ai():
-    dashboard_card(
-        "AI-Assisted Sales Pipeline Command Center",
-        "Sales AI Agent",
-        "Turns sales pipeline data into one executive view for quota gaps, coverage, forecast confidence, rep performance, and deal risk.",
-        "Python, Streamlit, pandas, Plotly",
-        "https://github.com/ritikagarg0903/sales-ops-command-center",
-        img=SALES_AI_SCREENSHOT_URL,
-        card_id="sales-project",
+def _render_project_uber_clean():
+    st.markdown(
+        f'''
+        <div id="uber-clean-project" class="card">
+          <div class="project-heading"><div class="tag">Go-to-Market Strategy</div><h3>Uber Clean Development Plan</h3></div>
+          <div class="image-frame"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
+          <div class="project-copy">
+            <p class="muted"><strong>What it shows:</strong> A presentation-led capstone focused on go-to-market strategy for Uber Clean, covering the customer problem, target persona, service model, and launch framing with Procter &amp; Gamble as a strategic partner.</p>
+            <p class="tools-line"><strong>Tools:</strong> Go-to-market strategy, product planning, persona research, JTBD, service design</p>
+            <div class="project-links"><a class="project-link alt-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
+          </div>
+        </div>
+        ''',
+        unsafe_allow_html=True,
     )
 
 
@@ -743,7 +748,7 @@ def _render_project_pathfindher():
 
 
 _PROJECT_RENDERERS = {
-    "sales_ai": _render_project_sales_ai,
+    "uber_clean": _render_project_uber_clean,
     "transit": _render_project_transit,
     "hacker_news": _render_project_hacker_news,
     "pathfindher": _render_project_pathfindher,
@@ -761,22 +766,7 @@ for _i in range(0, len(_order), 2):
         with _c2:
             _PROJECT_RENDERERS[_order[_i + 1]]()
 
-st.markdown(" ")
-st.markdown('<div id="uber-clean-project"></div>', unsafe_allow_html=True)
-st.markdown('<div class="card"><div class="project-heading"><div class="tag">Go-to-Market Strategy</div><h3>Uber Clean Development Plan</h3></div>', unsafe_allow_html=True)
-image_pair(
-    UBER_CLEAN_COVER_URL,
-    "Uber Clean Development Plan cover",
-    UBER_CLEAN_GROWTH_TACTICS_URL,
-    "Uber Clean growth tactics slide",
-)
-project_copy_with_pdf(
-    "A presentation-led capstone focused on go-to-market strategy for Uber Clean, covering the customer problem, target persona, service model, and launch framing with Procter &amp; Gamble as a strategic partner.",
-    "Go-to-market strategy, product planning, persona research, JTBD, service design",
-    UBER_CLEAN_CAPSTONE_URL,
-    pdf_label="View presentation PDF",
-)
-st.markdown('</div>', unsafe_allow_html=True)
+
 
 st.header("Certifications")
 st.markdown(

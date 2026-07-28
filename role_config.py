@@ -10,7 +10,7 @@ _DEFAULT = {
         "Data, AI &amp; Operations Product Portfolio. I build automation workflows, "
         "AI-assisted systems, and decision dashboards that turn messy operational data "
         "into leadership-ready insight. From CRM analytics to pipeline intelligence, "
-        "I leverage data so teams can move faster."
+        "I leverage data so teams can move faster and business revenue can grow."
     ),
     "flagship_title": "Flagship Work",
     "stats": [
@@ -29,11 +29,11 @@ _DEFAULT = {
     "rtds_kicker": "Real Time Data Services",
     "rtds_title": "Turned CRM and campaign data into revenue insight",
     "rtds_bullets": [
-        "Cleaned and segmented 5,000+ Salesforce and marketing records to improve reporting trust and sharpen audience targeting across growth campaigns.",
+        "Cleaned and segmented 5,000+ Salesforce and marketing CRM records to improve reporting trust and sharpen audience targeting across growth campaigns.",
         "Supported analysis tied to $600K in reactivated revenue by connecting campaign efficiency, customer behavior, and operational decisions.",
         "Built workflows using trigger-based segmentation and lead scoring criteria, increasing email engagement by 12% and cutting time-to-first-touch by 24 hours.",
     ],
-    "project_order": ["sales_ai", "transit", "hacker_news", "pathfindher"],
+    "project_order": ["transit", "pathfindher", "hacker_news", "uber_clean"],
 }
 
 _AI = {
@@ -65,7 +65,7 @@ _AI = {
         "Supported analysis tied to $1M+ in revenue by connecting campaign efficiency, customer behavior, and automated decision workflows across display ads and SEM/PPC channels.",
         "Built trigger-based automation workflows for lead scoring and segmentation, increasing email engagement by 12% and cutting response time by 24 hours.",
     ],
-    "project_order": ["sales_ai", "pathfindher", "hacker_news", "transit"],
+    "project_order": ["transit", "pathfindher", "hacker_news", "uber_clean"],
 }
 
 _GROWTH = {
@@ -97,7 +97,7 @@ _GROWTH = {
         "Drove $400K revenue uplift by optimizing marketing spend through rigorous A/B testing of display ads and SEM/PPC keywords, presenting findings to leadership to inform budget reallocation decisions.",
         "Designed end-to-end webinar funnel achieving 25% lead conversion lift; translated user behavior insights into a website optimization roadmap driving 8% improvement in the acquisition funnel.",
     ],
-    "project_order": ["hacker_news", "sales_ai", "pathfindher", "transit"],
+    "project_order": ["transit", "pathfindher", "hacker_news", "uber_clean"],
 }
 
 _DATA = {
@@ -129,7 +129,7 @@ _DATA = {
         "Built Tableau dashboards combining GA4, Salesforce, and campaign data to monitor traffic, leads, conversions, and revenue trends &mdash; reduced weekly manual reporting time by 90%.",
         "Analyzed A/B test and campaign performance to identify higher-converting channels, contributing to $400K revenue uplift and 40% ROI improvement; partnered cross-functionally to analyze funnel drop-offs and inform website optimization.",
     ],
-    "project_order": ["transit", "hacker_news", "sales_ai", "pathfindher"],
+    "project_order": ["transit", "pathfindher", "hacker_news", "uber_clean"],
 }
 
 _ROLES = {"ai": _AI, "gr": _GROWTH, "dt": _DATA, "growth": _GROWTH, "data": _DATA}
