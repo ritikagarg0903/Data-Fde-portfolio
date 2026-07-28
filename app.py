@@ -697,7 +697,7 @@ def _render_project_uber_clean():
 
 def _render_project_transit():
     dashboard_card(
-        "Bay Area Transit Performance Monitor",
+        "Bay Area Transit Monitor",
         "Operational Analytics",
         "Tracks Bay area transit reliability with delay KPIs, freshness checks, route trends, heatmaps, and live geospatial context by scraping public data.",
         "Python, SQL, BigQuery, dbt, Looker Studio",
