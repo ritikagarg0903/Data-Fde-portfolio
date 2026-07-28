@@ -36,7 +36,7 @@ st.markdown(
     a, button, input, textarea, select, video { caret-color: auto; }
     .block-container { max-width: 1240px; padding-top: 3.4rem; padding-bottom: 2rem; }
     h1 { font-size: clamp(2.8rem, 6.6vw, 6rem); line-height: 1; margin: 0 0 .55rem; letter-spacing: 0; }
-    h2 { border-top: 1px solid #ded5ca; padding-top: 1rem; margin-top: 1.45rem; letter-spacing: 0; }
+    h2 { border-top: 1px solid #ded5ca; padding-top: 1.5rem; margin-top: 2.5rem; margin-bottom: 1.2rem; letter-spacing: 0; }
     h3 { color: #25211d; letter-spacing: 0; margin-bottom: .35rem; }
     a { color: #246b61 !important; font-weight: 800; text-decoration: none; }
     .subhead { color: #716960; font-size: 1.08rem; line-height: 1.5; max-width: 900px; margin-bottom: .75rem; }
