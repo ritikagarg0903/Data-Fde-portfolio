@@ -36,7 +36,8 @@ st.markdown(
     a, button, input, textarea, select, video { caret-color: auto; }
     .block-container { max-width: 1240px; padding-top: 3.4rem; padding-bottom: 2rem; }
     h1 { font-size: clamp(2.8rem, 6.6vw, 6rem); line-height: 1; margin: 0 0 .55rem; letter-spacing: 0; }
-    h2 { border-top: 1px solid #ded5ca; padding-top: 1.5rem; margin-top: 2.5rem; margin-bottom: 1.2rem; letter-spacing: 0; }
+    h2 { letter-spacing: 0; margin: 0 0 .5rem 0; }
+    .section-header { border-top: 1px solid #ded5ca; padding-top: 1.5rem; margin-top: 2.2rem; margin-bottom: .8rem; }
     h3 { color: #25211d; letter-spacing: 0; margin-bottom: .35rem; }
     a { color: #246b61 !important; font-weight: 800; text-decoration: none; }
     .subhead { color: #716960; font-size: 1.08rem; line-height: 1.5; max-width: 900px; margin-bottom: .75rem; }
@@ -646,7 +647,7 @@ journey = [
 render_journey_timeline(journey)
 
 st.markdown('<div id="tbn-automation"></div>', unsafe_allow_html=True)
-st.header(rc["flagship_title"])
+st.markdown(f'<div class="section-header"><h2>{rc["flagship_title"]}</h2></div>', unsafe_allow_html=True)
 st.subheader("The Best Notary Slack Productivity Automation")
 st.write("A Slack-to-dashboard automation that turns daily work updates into structured productivity insight for leadership review.")
 
@@ -687,7 +688,7 @@ def _render_project_uber_clean():
           <div class="project-copy">
             <p class="muted"><strong>What it shows:</strong> A GTM strategy capstone defining customer personas, service design, and launch framing for Uber Clean in partnership with P&amp;G.</p>
             <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, JTBD</p>
-            <div class="project-links"><a class="project-link alt-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
+            <div class="project-links"><a class="project-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
           </div>
         </div>
         ''',
@@ -754,7 +755,7 @@ _PROJECT_RENDERERS = {
     "pathfindher": _render_project_pathfindher,
 }
 
-st.header("Project Highlights")
+st.markdown('<div class="section-header"><h2>Project Highlights</h2></div>', unsafe_allow_html=True)
 _order = rc["project_order"]
 for _i in range(0, len(_order), 2):
     if _i > 0:
@@ -768,7 +769,7 @@ for _i in range(0, len(_order), 2):
 
 
 
-st.header("Certifications")
+st.markdown('<div class="section-header"><h2>Certifications</h2></div>', unsafe_allow_html=True)
 st.markdown(
     """
     <style>
