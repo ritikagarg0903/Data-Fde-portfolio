@@ -686,7 +686,7 @@ def _render_project_uber_clean():
           <div class="image-frame"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
           <div class="project-copy">
             <p class="muted"><strong>What it shows:</strong> A GTM strategy capstone defining customer personas, service design, and launch framing for Uber Clean in partnership with P&amp;G.</p>
-            <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, Persona Research, JTBD</p>
+            <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, JTBD</p>
             <div class="project-links"><a class="project-link alt-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
           </div>
         </div>
