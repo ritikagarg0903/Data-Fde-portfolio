@@ -683,7 +683,7 @@ def _render_project_gtm():
     dashboard_card(
         "GTM & RevOps Command Center",
         "GTM & Revenue Operations",
-        "End-to-end command center connecting demand generation to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound experiments, and pipeline risk.",
+        "End-to-end command center from demand gen to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound, and pipeline risk.",
         "Python, Streamlit, pandas, Plotly",
         "https://github.com/ritikagarg0903/gtm-revop-command-center",
         img=REVOPS_SCREENSHOT_URL,
