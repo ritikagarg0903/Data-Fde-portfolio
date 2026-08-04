@@ -10,7 +10,7 @@ _DEFAULT = {
         "AI, Analytics &amp; Operations Portfolio. I build automation workflows, "
         "data pipelines, and decision systems that turn operational complexity "
         "into measurable business outcomes. From CRM enrichment and campaign "
-        "analytics to AI-powered classification, I engineer the systems that "
+        "analytics to AI workflows, I engineer the systems that "
         "help teams move faster and revenue grow."
     ),
     "flagship_title": "Flagship Work",
