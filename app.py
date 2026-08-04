@@ -685,7 +685,7 @@ def _render_project_sales():
         "Decision Dashboards",
         "Turns pipeline data into one executive view for quota gaps, coverage, forecast confidence, rep performance, and deal risk.",
         "Python, Streamlit, pandas, Plotly",
-        "https://github.com/ritikagarg0903/sales-ops-command-center",
+        "https://github.com/ritikagarg0903/gtm-revop-command-center",
         img=SALES_AI_SCREENSHOT_URL,
         card_id="sales-project",
     )
