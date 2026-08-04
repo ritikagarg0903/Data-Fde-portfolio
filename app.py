@@ -560,7 +560,7 @@ def render_journey_timeline(journey: list[dict]):
                   </a>
                   <a class="focus-link" href="#sales-project">
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
-                    <strong>Decision Dashboards</strong>
+                    <strong>GTM & RevOps</strong>
                   </a>
                   <a class="focus-link" href="#uber-clean-project">
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg></span>
@@ -681,9 +681,9 @@ st.markdown(
 
 def _render_project_sales():
     dashboard_card(
-        "AI-Assisted Sales Pipeline Command Center",
-        "Decision Dashboards",
-        "Turns pipeline data into one executive view for quota gaps, coverage, forecast confidence, rep performance, and deal risk.",
+        "GTM & Revenue Operations Command Center",
+        "GTM & Revenue Operations",
+        "End-to-end command center connecting demand generation to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound experiments, and pipeline risk.",
         "Python, Streamlit, pandas, Plotly",
         "https://github.com/ritikagarg0903/gtm-revop-command-center",
         img=SALES_AI_SCREENSHOT_URL,
