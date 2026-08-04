@@ -125,7 +125,7 @@ def local_image_or_mock(path):
         st.markdown(
             """
             <div class="mock-dashboard">
-              <div class="mock-title">GTM & Revenue Operations Command Center</div>
+              <div class="mock-title">GTM & RevOps Command Center</div>
               <p class="mini">CRM command center for pipeline risk, forecast gaps, rep performance patterns, and manager attention.</p>
               <div class="mock-tabs"><span>Executive Overview</span><span>Pipeline Health</span><span>Rep Performance</span><span>AI Deal Risk</span></div>
               <div class="mock-grid">
@@ -681,7 +681,7 @@ st.markdown(
 
 def _render_project_gtm():
     dashboard_card(
-        "GTM & Revenue Operations Command Center",
+        "GTM & RevOps Command Center",
         "GTM & Revenue Operations",
         "End-to-end command center connecting demand generation to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound experiments, and pipeline risk.",
         "Python, Streamlit, pandas, Plotly",
@@ -778,7 +778,10 @@ st.markdown(
         </div>
       </div>
       <div style="flex: 1 1 50%; min-width: 0;">
-        <div class="image-frame" style="height: 100%; margin: 0; min-height: 280px;"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
+        <div class="image-pair" style="margin: 0; height: 100%;">
+          <div class="image-frame" style="margin: 0; min-height: 260px;"><img src="{UBER_CLEAN_COVER_URL}" alt="Uber Clean cover"></div>
+          <div class="image-frame" style="margin: 0; min-height: 260px;"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
+        </div>
       </div>
     </div>
     ''',
