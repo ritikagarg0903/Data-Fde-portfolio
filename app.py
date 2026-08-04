@@ -558,7 +558,7 @@ def render_journey_timeline(journey: list[dict]):
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
                     <strong>Operations Intelligence</strong>
                   </a>
-                  <a class="focus-link" href="#sales-project">
+                  <a class="focus-link" href="#gtm-project">
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
                     <strong>GTM & RevOps</strong>
                   </a>
@@ -687,7 +687,7 @@ def _render_project_sales():
         "Python, Streamlit, pandas, Plotly",
         "https://github.com/ritikagarg0903/gtm-revop-command-center",
         img=SALES_AI_SCREENSHOT_URL,
-        card_id="sales-project",
+        card_id="gtm-project",
     )
 
 
