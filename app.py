@@ -772,7 +772,7 @@ st.markdown(
       <div style="flex: 1 1 50%; min-width: 0;">
         <div class="project-heading"><div class="tag">Go-to-Market Strategy</div><h3>Uber Clean Development Plan</h3></div>
         <div class="project-copy" style="border-top: 1px solid #ded5ca; padding-top: .85rem;">
-          <p class="muted"><strong>What it shows:</strong> A comprehensive product development plan detailing target customer personas, business models, minimum viable product features, and strategic growth initiatives to launch Uber Clean alongside partner Tide.</p>
+          <p class="muted"><strong>What it shows:</strong> A comprehensive product development plan detailing target customer personas, business models, minimum viable product features, and strategic growth initiatives to launch Uber Clean alongside partner P&amp;G.</p>
           <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, JTBD</p>
           <div class="project-links"><a class="project-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
         </div>
