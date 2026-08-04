@@ -679,20 +679,15 @@ st.markdown(
 )
 
 
-def _render_project_uber_clean():
-    st.markdown(
-        f'''
-        <div id="uber-clean-project" class="card">
-          <div class="project-heading"><div class="tag">Go-to-Market Strategy</div><h3>Uber Clean Development Plan</h3></div>
-          <div class="image-frame"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
-          <div class="project-copy">
-            <p class="muted"><strong>What it shows:</strong> A GTM strategy capstone defining customer personas, service design, and launch framing for Uber Clean in partnership with P&amp;G.</p>
-            <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, JTBD</p>
-            <div class="project-links"><a class="project-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
-          </div>
-        </div>
-        ''',
-        unsafe_allow_html=True,
+def _render_project_sales():
+    dashboard_card(
+        "AI-Assisted Sales Pipeline Command Center",
+        "Decision Dashboards",
+        "Turns pipeline data into one executive view for quota gaps, coverage, forecast confidence, rep performance, and deal risk.",
+        "Python, Streamlit, pandas, Plotly",
+        "https://github.com/ritikagarg0903/sales-ops-command-center",
+        img=SALES_AI_SCREENSHOT_URL,
+        card_id="sales-project",
     )
 
 
@@ -749,7 +744,7 @@ def _render_project_pathfindher():
 
 
 _PROJECT_RENDERERS = {
-    "uber_clean": _render_project_uber_clean,
+    "sales": _render_project_sales,
     "transit": _render_project_transit,
     "hacker_news": _render_project_hacker_news,
     "pathfindher": _render_project_pathfindher,
@@ -766,6 +761,27 @@ for _i in range(0, len(_order), 2):
     if _i + 1 < len(_order):
         with _c2:
             _PROJECT_RENDERERS[_order[_i + 1]]()
+
+# Uber Clean — full-width two-column card at the end
+st.markdown('<div style="height: 1.5rem;"></div>', unsafe_allow_html=True)
+st.markdown(
+    f'''
+    <div id="uber-clean-project" class="card" style="flex-direction: row; gap: 1.2rem; align-items: stretch;">
+      <div style="flex: 1 1 50%; min-width: 0;">
+        <div class="project-heading"><div class="tag">Go-to-Market Strategy</div><h3>Uber Clean Development Plan</h3></div>
+        <div class="project-copy" style="border-top: 1px solid #ded5ca; padding-top: .85rem;">
+          <p class="muted"><strong>What it shows:</strong> A GTM strategy capstone defining customer personas, service design, and launch framing for Uber Clean in partnership with P&amp;G.</p>
+          <p class="tools-line"><strong>Tools:</strong> GTM Strategy, Product Planning, JTBD</p>
+          <div class="project-links"><a class="project-link" href="{UBER_CLEAN_CAPSTONE_URL}" target="_blank">View presentation PDF</a></div>
+        </div>
+      </div>
+      <div style="flex: 1 1 50%; min-width: 0;">
+        <div class="image-frame" style="height: 100%; margin: 0; min-height: 280px;"><img src="{UBER_CLEAN_GROWTH_TACTICS_URL}" alt="Uber Clean growth tactics"></div>
+      </div>
+    </div>
+    ''',
+    unsafe_allow_html=True,
+)
 
 
 
