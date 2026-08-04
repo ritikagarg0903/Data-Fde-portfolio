@@ -6,7 +6,7 @@ import streamlit as st
 BASE_DIR = Path(__file__).parent
 TBN_GIF = BASE_DIR / "assets" / "tbn_auto.gif"
 PATHFINDHER_VIDEO = BASE_DIR / "assets" / "PathFindHer_Walk_Without_Fear.mp4"
-SALES_AI_SCREENSHOT = BASE_DIR / "assets" / "revops_dash.jpeg"
+REVOPS_SCREENSHOT = BASE_DIR / "assets" / "revops_dash.jpeg"
 UBER_CLEAN_COVER = BASE_DIR / "assets" / "uber_clean_cover.png"
 
 BAY_AREA_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/bay-area-transit/main/assets/bay_area_dashboard_screenshot.png"
@@ -14,7 +14,7 @@ HACKER_NEWS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/h
 UBER_CLEAN_COVER_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_cover.png"
 UBER_CLEAN_GROWTH_TACTICS_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_growth_tactics.png"
 UBER_CLEAN_CAPSTONE_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_capstone.pdf"
-SALES_AI_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/revops_dash.jpeg"
+REVOPS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/revops_dash.jpeg"
 PATHFINDHER_VIDEO_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/PathFindHer_Walk_Without_Fear.mp4"
 
 st.set_page_config(
@@ -120,12 +120,12 @@ def image_pair(left_src, left_alt, right_src, right_alt):
 
 def local_image_or_mock(path):
     if path.exists():
-        image_frame(str(path), "Sales AI dashboard")
+        image_frame(str(path), "GTM & RevOps dashboard")
     else:
         st.markdown(
             """
             <div class="mock-dashboard">
-              <div class="mock-title">AI-Assisted Sales Pipeline Command Center</div>
+              <div class="mock-title">GTM & Revenue Operations Command Center</div>
               <p class="mini">CRM command center for pipeline risk, forecast gaps, rep performance patterns, and manager attention.</p>
               <div class="mock-tabs"><span>Executive Overview</span><span>Pipeline Health</span><span>Rep Performance</span><span>AI Deal Risk</span></div>
               <div class="mock-grid">
@@ -679,14 +679,14 @@ st.markdown(
 )
 
 
-def _render_project_sales():
+def _render_project_gtm():
     dashboard_card(
         "GTM & Revenue Operations Command Center",
         "GTM & Revenue Operations",
         "End-to-end command center connecting demand generation to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound experiments, and pipeline risk.",
         "Python, Streamlit, pandas, Plotly",
         "https://github.com/ritikagarg0903/gtm-revop-command-center",
-        img=SALES_AI_SCREENSHOT_URL,
+        img=REVOPS_SCREENSHOT_URL,
         card_id="gtm-project",
     )
 
@@ -744,7 +744,7 @@ def _render_project_pathfindher():
 
 
 _PROJECT_RENDERERS = {
-    "sales": _render_project_sales,
+    "gtm": _render_project_gtm,
     "transit": _render_project_transit,
     "hacker_news": _render_project_hacker_news,
     "pathfindher": _render_project_pathfindher,
