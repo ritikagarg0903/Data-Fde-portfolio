@@ -757,10 +757,12 @@ for _i in range(0, len(_order), 2):
         st.markdown('<div style="height: 1.5rem;"></div>', unsafe_allow_html=True)
     _c1, _c2 = st.columns(2, gap="large")
     with _c1:
-        _PROJECT_RENDERERS[_order[_i]]()
+        if _order[_i] in _PROJECT_RENDERERS:
+            _PROJECT_RENDERERS[_order[_i]]()
     if _i + 1 < len(_order):
         with _c2:
-            _PROJECT_RENDERERS[_order[_i + 1]]()
+            if _order[_i + 1] in _PROJECT_RENDERERS:
+                _PROJECT_RENDERERS[_order[_i + 1]]()
 
 # Uber Clean — full-width two-column card at the end
 st.markdown('<div style="height: 1.5rem;"></div>', unsafe_allow_html=True)
