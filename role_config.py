@@ -9,8 +9,8 @@ _DEFAULT = {
     "subhead": (
         "Growth, AI &amp; Operations Portfolio. I build automation workflows, "
         "data pipelines, and GTM systems that turn operational complexity "
-        "into revenue. From CRM enrichment and lead scoring to AI-powered "
-        "workflows, I engineer the infrastructure that helps teams sell "
+        "into revenue. From CRM enrichment and lead scoring to AI automation "
+        "pipelines, I engineer the infrastructure that helps teams sell "
         "smarter and scale faster."
     ),
     "flagship_title": "Flagship Work",
