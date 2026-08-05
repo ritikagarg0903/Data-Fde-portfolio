@@ -18,7 +18,7 @@ REVOPS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-a
 PATHFINDHER_VIDEO_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/PathFindHer_Walk_Without_Fear.mp4"
 
 st.set_page_config(
-    page_title="Ritika Garg | AI, Analytics & Operations Portfolio",
+    page_title="Ritika Garg | Growth, AI & Operations Portfolio",
     page_icon="RG",
     layout="wide",
 )

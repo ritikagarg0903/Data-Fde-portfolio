@@ -7,11 +7,11 @@ Default (no parameter) shows the general portfolio.
 _DEFAULT = {
     "kicker": "Portfolio",
     "subhead": (
-        "AI, Analytics &amp; Operations Portfolio. I build automation workflows, "
-        "data pipelines, and decision systems that turn operational complexity "
-        "into measurable business outcomes. From CRM enrichment and campaign "
-        "analytics to AI workflows, I engineer the systems that "
-        "help teams move faster and revenue grow."
+        "Growth, AI &amp; Operations Portfolio. I build automation workflows, "
+        "data pipelines, and GTM systems that turn operational complexity "
+        "into revenue. From CRM enrichment and lead scoring to AI-powered "
+        "workflows, I engineer the infrastructure that helps teams sell "
+        "smarter and scale faster."
     ),
     "flagship_title": "Flagship Work",
     "stats": [
