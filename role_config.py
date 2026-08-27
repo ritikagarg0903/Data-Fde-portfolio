@@ -23,9 +23,9 @@ _DEFAULT = {
     "tbn_kicker": "The Best Notary",
     "tbn_title": "AI automation, predictive talent scoring, and GTM enrichment",
     "tbn_bullets": [
-        "<strong>Slack Intelligence:</strong> Built a Make.com and OpenAI classifier with live Looker reporting, saving 10+ review hours weekly.",
-        "<strong>Notary Fitness Score:</strong> Built a Python model to score 100+ applicants, reducing hiring cost and churn by 20%.",
-        "<strong>Clay Enrichment:</strong> Automated research and scoring for 250+ accounts into outbound-ready segments.",
+        "<strong>Slack Intelligence:</strong> Built a Make.com and OpenAI classifier to structure unstructured Slack updates, saving 10+ review hours weekly and giving leadership live visibility in Looker Studio.",
+        "<strong>Notary Fitness Score:</strong> Built a Python model using historical performance signals to score 100+ applicants and prioritize high-fit candidates, reducing hiring cost and churn by 20%.",
+        "<strong>Clay Enrichment:</strong> Automated profile research, scoring, and segmentation for 250+ target accounts, producing high-intent lead lists ready for outbound campaigns.",
     ],
     "rtds_kicker": "Real Time Data Services",
     "rtds_title": "Turned CRM and campaign data into revenue insight",
