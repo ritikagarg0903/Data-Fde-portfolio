@@ -24,7 +24,7 @@ _DEFAULT = {
     "tbn_title": "AI automation, predictive talent scoring, and GTM enrichment",
     "tbn_bullets": [
         "<strong>Slack Intelligence:</strong> Built a Make.com and OpenAI classifier with live Looker reporting, saving 10+ review hours weekly.",
-        "<strong>Notary Fitness Score:</strong> Built a Python model to score 1,000+ applicants, reducing hiring cost and churn by 20%.",
+        "<strong>Notary Fitness Score:</strong> Built a Python model to score 100+ applicants, reducing hiring cost and churn by 20%.",
         "<strong>Clay Enrichment:</strong> Automated research and scoring for 250+ accounts into outbound-ready segments.",
     ],
     "rtds_kicker": "Real Time Data Services",
