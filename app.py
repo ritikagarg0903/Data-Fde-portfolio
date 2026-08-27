@@ -723,7 +723,7 @@ def _render_project_sf_courts():
     dashboard_card(
         "SF Court Reservation Analysis",
         "Web Scraping & Data Engineering",
-        "Scrapes seven days of tennis and pickleball availability across 38 San Francisco courts, models reservation data in MySQL, integrates Open-Meteo forecasts from MongoDB, and analyzes utilization patterns across 266 court-day records.",
+        "Scrapes availability across 38 SF courts, joins MySQL reservations with MongoDB weather data, and analyzes utilization.",
         "Python, Selenium, MySQL, MongoDB, Open-Meteo API",
         "https://github.com/ritikagarg0903/San-Francisco-Court-Reservation-Scrapping",
         img=SF_COURT_AVAILABILITY_URL,
