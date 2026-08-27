@@ -555,7 +555,7 @@ def render_journey_timeline(journey: list[dict]):
                   <div class="experience-card">
                     <div class="experience-kicker">{rc["tbn_kicker"]}</div>
                     <div class="experience-title">{rc["tbn_title"]}</div>
-                    <div class="experience-meta">San Francisco, CA | Make.com, OpenAI, Clay, Looker Studio</div>
+                    <div class="experience-meta">San Francisco, CA | Python, Make.com, OpenAI, Clay, Looker Studio</div>
                     <ul class="experience-list">
                       {tbn_bullets_html}
                     </ul>
