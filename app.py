@@ -647,24 +647,22 @@ st.markdown("#### Technical Architecture")
 st.markdown(
     '''
     <div class="workflow-grid">
-      <div class="flow-step"><strong>01 Slack Webhooks</strong><span>Event subscriptions capture new messages and thread replies in near real time.</span></div>
-      <div class="flow-step"><strong>02 Make.com Orchestration</strong><span>Validate payloads, deduplicate event IDs, normalize fields, retry failures, and route records.</span></div>
-      <div class="flow-step"><strong>03 Knowledge Base</strong><span>Retrieve approved task categories, team definitions, examples, and business rules to ground each decision.</span></div>
-      <div class="flow-step"><strong>04 OpenAI Classification</strong><span>Return structured category, priority, confidence, and reasoning using a constrained output schema.</span></div>
-      <div class="flow-step"><strong>05 Human Review Queue</strong><span>Send low-confidence or ambiguous records to an operator; approved corrections become labeled feedback.</span></div>
-      <div class="flow-step"><strong>06 Analytics Layer</strong><span>Persist predictions and reviewer decisions in Google Sheets, then publish monitored KPIs in Looker Studio.</span></div>
+      <div class="flow-step"><strong>01 Slack Webhook</strong><span>Ingest message events and thread replies.</span></div>
+      <div class="flow-step"><strong>02 Make.com</strong><span>Validate payloads, deduplicate events, and retry failures.</span></div>
+      <div class="flow-step"><strong>03 Knowledge Base</strong><span>Ground prompts with the approved taxonomy, rules, and examples.</span></div>
+      <div class="flow-step"><strong>04 OpenAI</strong><span>Return schema-valid category, priority, and confidence fields.</span></div>
+      <div class="flow-step"><strong>05 Review & Analytics</strong><span>Approve exceptions, store corrections, and publish KPIs.</span></div>
     </div>
     ''',
     unsafe_allow_html=True,
 )
 
-st.markdown("#### Reliability and Feedback Design")
+st.markdown("#### Quality Controls")
 st.markdown(
     """
-- **Human in the loop:** confidence thresholds and exception rules route uncertain classifications to a reviewer instead of silently publishing them. Reviewer corrections are captured with the original prediction for auditability and prompt iteration.
-- **Knowledge-grounded decisions:** the prompt is enriched with an approved taxonomy, team-specific definitions, labeled examples, and routing rules so outputs follow operational context rather than relying only on general model knowledge.
-- **Webhook resilience:** event IDs support idempotent processing, while validation, error routing, and retries protect the workflow from malformed payloads, duplicate Slack events, and downstream API failures.
-- **Accuracy monitoring:** classification accuracy is measured against reviewer-approved labels. Misclassification analysis and feedback-driven prompt updates improved measured accuracy from **60% to 85%**, with low-confidence volume tracked as an additional quality signal.
+- **Idempotency:** Slack event IDs prevent duplicate processing.
+- **Human review:** confidence thresholds route ambiguous records for approval.
+- **Evaluation:** reviewer labels and error analysis improved accuracy from **60% to 85%**.
     """
 )
 
