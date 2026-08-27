@@ -6,7 +6,6 @@ import streamlit as st
 BASE_DIR = Path(__file__).parent
 TBN_GIF = BASE_DIR / "assets" / "tbn_auto.gif"
 PATHFINDHER_VIDEO = BASE_DIR / "assets" / "PathFindHer_Walk_Without_Fear.mp4"
-REVOPS_SCREENSHOT = BASE_DIR / "assets" / "revops_dash.jpeg"
 UBER_CLEAN_COVER = BASE_DIR / "assets" / "uber_clean_cover.png"
 
 BAY_AREA_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/bay-area-transit/main/assets/bay_area_dashboard_screenshot.png"
@@ -14,7 +13,6 @@ HACKER_NEWS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/h
 UBER_CLEAN_COVER_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_cover.png"
 UBER_CLEAN_GROWTH_TACTICS_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_growth_tactics.png"
 UBER_CLEAN_CAPSTONE_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_capstone.pdf"
-REVOPS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/revops_dash.jpeg"
 PATHFINDHER_VIDEO_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/PathFindHer_Walk_Without_Fear.mp4"
 
 st.set_page_config(
@@ -116,30 +114,6 @@ def image_pair(left_src, left_alt, right_src, right_alt):
         ''',
         unsafe_allow_html=True,
     )
-
-
-def local_image_or_mock(path):
-    if path.exists():
-        image_frame(str(path), "GTM & RevOps dashboard")
-    else:
-        st.markdown(
-            """
-            <div class="mock-dashboard">
-              <div class="mock-title">GTM & RevOps Command Center</div>
-              <p class="mini">CRM command center for pipeline risk, forecast gaps, rep performance patterns, and manager attention.</p>
-              <div class="mock-tabs"><span>Executive Overview</span><span>Pipeline Health</span><span>Rep Performance</span><span>AI Deal Risk</span></div>
-              <div class="mock-grid">
-                <div class="mock-kpi">Open pipeline<strong>$21.5M</strong></div>
-                <div class="mock-kpi">Weighted<strong>$8.8M</strong></div>
-                <div class="mock-kpi">Quota gap<strong>$6.8M</strong></div>
-                <div class="mock-kpi">Coverage<strong>3.16x</strong></div>
-                <div class="mock-kpi">High risk<strong>$4.9M</strong></div>
-              </div>
-              <div class="mock-chart"><div class="bar" style="height:118px">5.2M</div><div class="bar" style="height:104px">4.9M</div><div class="bar" style="height:138px">6.1M</div><div class="bar" style="height:114px">5.3M</div></div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
 
 
 def project_copy(description, tools, link=None):
@@ -550,9 +524,9 @@ def render_journey_timeline(journey: list[dict]):
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V2H8"/><path d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z"/><path d="M2 12h2"/><path d="M9 11v2"/><path d="M15 11v2"/><path d="M20 12h2"/></svg></span>
                     <strong>AI Automation</strong>
                   </a>
-                  <a class="focus-link" href="#gtm-project">
+                  <a class="focus-link" href="#sf-courts-project">
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
-                    <strong>GTM & RevOps</strong>
+                    <strong>Web Scraping & Data Engineering</strong>
                   </a>
                   <a class="focus-link" href="#hacker-news-project">
                     <span class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 11 4-4 4 4 5-5"/></svg></span>
@@ -694,18 +668,6 @@ st.markdown(
 )
 
 
-def _render_project_gtm():
-    dashboard_card(
-        "GTM & RevOps Command Center",
-        "GTM & Revenue Operations",
-        "End-to-end command center from demand gen to revenue execution — covering funnel conversion, prospect enrichment, lead routing, outbound, and pipeline risk.",
-        "Python, Streamlit, pandas, Plotly",
-        "https://github.com/ritikagarg0903/gtm-revop-command-center",
-        img=REVOPS_SCREENSHOT_URL,
-        card_id="gtm-project",
-    )
-
-
 def _render_project_transit():
     dashboard_card(
         "Bay Area Transit Monitor",
@@ -758,11 +720,22 @@ def _render_project_pathfindher():
     )
 
 
+def _render_project_sf_courts():
+    dashboard_card(
+        "San Francisco Court Reservation Analysis",
+        "Web Scraping & Data Engineering",
+        "Scrapes seven days of tennis and pickleball availability across 38 San Francisco courts, models reservation data in MySQL, integrates Open-Meteo forecasts from MongoDB, and analyzes utilization patterns across 266 court-day records.",
+        "Python, Selenium, pandas, MySQL, MongoDB, Open-Meteo API, SQLAlchemy, Matplotlib",
+        "https://github.com/ritikagarg0903/San-Francisco-Court-Reservation-Scrapping",
+        card_id="sf-courts-project",
+    )
+
+
 _PROJECT_RENDERERS = {
-    "gtm": _render_project_gtm,
     "transit": _render_project_transit,
     "hacker_news": _render_project_hacker_news,
     "pathfindher": _render_project_pathfindher,
+    "sf_courts": _render_project_sf_courts,
 }
 
 st.markdown('<div class="section-header"><h2>Project Highlights</h2></div>', unsafe_allow_html=True)
