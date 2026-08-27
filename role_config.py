@@ -5,13 +5,13 @@ Default (no parameter) shows the general portfolio.
 """
 
 _DEFAULT = {
-    "kicker": "Portfolio",
+    "kicker": "Forward Deployed Engineer Portfolio",
     "subhead": (
-        "Growth, AI &amp; Operations Portfolio. I build automation workflows, "
-        "data pipelines, and GTM systems that turn operational complexity "
-        "into revenue. From CRM enrichment and lead scoring to AI automation "
-        "pipelines, I engineer the infrastructure that helps teams sell "
-        "smarter and scale faster."
+        "Forward Deployed Engineer who works at the intersection of customers, "
+        "data, and AI to turn ambiguous business problems into production-ready "
+        "solutions. I build integrations, automation workflows, data pipelines, "
+        "and human-in-the-loop AI systems &mdash; owning delivery from discovery "
+        "and rapid prototyping through deployment, measurement, and iteration."
     ),
     "flagship_title": "Flagship Work",
     "stats": [
