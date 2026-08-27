@@ -23,8 +23,8 @@ _DEFAULT = {
     "tbn_kicker": "The Best Notary",
     "tbn_title": "Slack + Make.com + OpenAI workflow for 500+ daily updates",
     "tbn_bullets": [
-        "Designed an end-to-end Slack, Make.com, OpenAI, Google Sheets, and Looker Studio workflow for 500+ daily work updates.",
-        "Reduced manual review by 10+ hours per week while improving classification accuracy from 60% to 85% through feedback loops.",
+        "Designed an event-driven Slack pipeline using webhooks, Make.com orchestration, OpenAI structured outputs, Google Sheets, and Looker Studio for 500+ daily work updates.",
+        "Built a human-in-the-loop review queue and knowledge-grounded classification layer; reviewer-approved labels and error analysis improved measured accuracy from 60% to 85% while saving 10+ hours weekly.",
         "Rapidly built a Clay data pipeline to enrich 250+ target law firm profiles — automating attributes into high-intent, segmented lead lists for outbound.",
     ],
     "rtds_kicker": "Real Time Data Services",
@@ -56,8 +56,8 @@ _AI = {
     "tbn_title": "AI automation pipeline and ICP scoring for Slack intelligence",
     "tbn_bullets": [
         "Designed a data-driven ICP framework using Python-based weighted scoring across firmographic, behavioral, and intent signals; operationalized in Salesforce CRM for AI-assisted segment targeting.",
-        "Engineered an AI pipeline using Make.com and OpenAI API to parse unstructured Slack data, classifying and routing 500+ daily work updates with 85% accuracy after iterative prompt tuning.",
-        "Rapidly built a Clay data pipeline to enrich 250+ target law firm profiles — automating attributes into high-intent, segmented lead lists for outbound.",
+        "Engineered a webhook-driven AI pipeline using Make.com and the OpenAI API to parse 500+ daily Slack updates into schema-validated categories, priorities, confidence scores, and routing decisions.",
+        "Grounded classifications in an approved knowledge base and routed low-confidence cases to human review; labeled corrections and misclassification analysis improved measured accuracy from 60% to 85%.",
     ],
     "rtds_kicker": "Real Time Data Services (B2B SaaS)",
     "rtds_title": "AI-assisted CRM segmentation and campaign targeting",

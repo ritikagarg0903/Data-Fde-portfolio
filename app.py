@@ -649,7 +649,11 @@ render_journey_timeline(journey)
 st.markdown('<div id="tbn-automation"></div>', unsafe_allow_html=True)
 st.markdown(f'<div class="section-header"><h2>{rc["flagship_title"]}</h2></div>', unsafe_allow_html=True)
 st.subheader("The Best Notary Slack Productivity Automation")
-st.write("A Slack-to-dashboard automation that turns daily work updates into structured productivity insight for leadership review.")
+st.write(
+    "An event-driven Slack intelligence pipeline that combines webhook ingestion, "
+    "knowledge-grounded AI classification, human-in-the-loop review, and monitored "
+    "feedback to produce reliable leadership reporting."
+)
 
 m1, m2, m3, m4 = st.columns(4)
 with m1:
@@ -664,18 +668,29 @@ with m4:
 st.markdown("#### Real Automation Workflow")
 gif_or_upload_note(TBN_GIF, "tbn_auto.gif")
 
-st.markdown("#### Workflow Map")
+st.markdown("#### Technical Architecture")
 st.markdown(
     '''
     <div class="workflow-grid">
-      <div class="flow-step"><strong>01 Slack</strong><span>Capture channel updates and thread replies.</span></div>
-      <div class="flow-step"><strong>02 Make.com</strong><span>Filter, deduplicate, and route work signals.</span></div>
-      <div class="flow-step"><strong>03 OpenAI</strong><span>Classify category, priority, and reasoning.</span></div>
-      <div class="flow-step"><strong>04 Google Sheets</strong><span>Store AI output with human-review fields.</span></div>
-      <div class="flow-step"><strong>05 Looker Studio</strong><span>Surface productivity insight for leadership.</span></div>
+      <div class="flow-step"><strong>01 Slack Webhooks</strong><span>Event subscriptions capture new messages and thread replies in near real time.</span></div>
+      <div class="flow-step"><strong>02 Make.com Orchestration</strong><span>Validate payloads, deduplicate event IDs, normalize fields, retry failures, and route records.</span></div>
+      <div class="flow-step"><strong>03 Knowledge Base</strong><span>Retrieve approved task categories, team definitions, examples, and business rules to ground each decision.</span></div>
+      <div class="flow-step"><strong>04 OpenAI Classification</strong><span>Return structured category, priority, confidence, and reasoning using a constrained output schema.</span></div>
+      <div class="flow-step"><strong>05 Human Review Queue</strong><span>Send low-confidence or ambiguous records to an operator; approved corrections become labeled feedback.</span></div>
+      <div class="flow-step"><strong>06 Analytics Layer</strong><span>Persist predictions and reviewer decisions in Google Sheets, then publish monitored KPIs in Looker Studio.</span></div>
     </div>
     ''',
     unsafe_allow_html=True,
+)
+
+st.markdown("#### Reliability and Feedback Design")
+st.markdown(
+    """
+- **Human in the loop:** confidence thresholds and exception rules route uncertain classifications to a reviewer instead of silently publishing them. Reviewer corrections are captured with the original prediction for auditability and prompt iteration.
+- **Knowledge-grounded decisions:** the prompt is enriched with an approved taxonomy, team-specific definitions, labeled examples, and routing rules so outputs follow operational context rather than relying only on general model knowledge.
+- **Webhook resilience:** event IDs support idempotent processing, while validation, error routing, and retries protect the workflow from malformed payloads, duplicate Slack events, and downstream API failures.
+- **Accuracy monitoring:** classification accuracy is measured against reviewer-approved labels. Misclassification analysis and feedback-driven prompt updates improved measured accuracy from **60% to 85%**, with low-confidence volume tracked as an additional quality signal.
+    """
 )
 
 
