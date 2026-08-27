@@ -10,6 +10,7 @@ UBER_CLEAN_COVER = BASE_DIR / "assets" / "uber_clean_cover.png"
 
 BAY_AREA_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/bay-area-transit/main/assets/bay_area_dashboard_screenshot.png"
 HACKER_NEWS_SCREENSHOT_URL = "https://raw.githubusercontent.com/ritikagarg0903/hacker-news-analytics/main/assets/dashboard_snapshot.png"
+SF_COURT_AVAILABILITY_URL = "https://raw.githubusercontent.com/ritikagarg0903/Data-Fde-portfolio/main/assets/sf_court_availability_by_day.png"
 UBER_CLEAN_COVER_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_cover.png"
 UBER_CLEAN_GROWTH_TACTICS_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_growth_tactics.png"
 UBER_CLEAN_CAPSTONE_URL = "https://raw.githubusercontent.com/ritikagarg0903/data-ai-operations-portfolio/staging/assets/uber_clean_capstone.pdf"
@@ -727,6 +728,7 @@ def _render_project_sf_courts():
         "Scrapes seven days of tennis and pickleball availability across 38 San Francisco courts, models reservation data in MySQL, integrates Open-Meteo forecasts from MongoDB, and analyzes utilization patterns across 266 court-day records.",
         "Python, Selenium, pandas, MySQL, MongoDB, Open-Meteo API, SQLAlchemy, Matplotlib",
         "https://github.com/ritikagarg0903/San-Francisco-Court-Reservation-Scrapping",
+        img=SF_COURT_AVAILABILITY_URL,
         card_id="sf-courts-project",
     )
 
