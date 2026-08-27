@@ -721,10 +721,10 @@ def _render_project_pathfindher():
 
 def _render_project_sf_courts():
     dashboard_card(
-        "San Francisco Court Reservation Analysis",
+        "SF Court Reservation Analysis",
         "Web Scraping & Data Engineering",
         "Scrapes seven days of tennis and pickleball availability across 38 San Francisco courts, models reservation data in MySQL, integrates Open-Meteo forecasts from MongoDB, and analyzes utilization patterns across 266 court-day records.",
-        "Python, Selenium, pandas, MySQL, MongoDB, Open-Meteo API, SQLAlchemy, Matplotlib",
+        "Python, Selenium, MySQL, MongoDB, Open-Meteo API",
         "https://github.com/ritikagarg0903/San-Francisco-Court-Reservation-Scrapping",
         img=SF_COURT_AVAILABILITY_URL,
         card_id="sf-courts-project",
