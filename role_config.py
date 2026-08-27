@@ -34,7 +34,7 @@ _DEFAULT = {
         "Supported analysis tied to $600K in reactivated revenue by connecting campaign efficiency, customer behavior, and operational decisions.",
         "Built workflows using trigger-based segmentation and lead scoring criteria, increasing email engagement by 12% and cutting time-to-first-touch by 24 hours.",
     ],
-    "project_order": ["transit", "hacker_news", "pathfindher", "sf_courts"],
+    "project_order": ["hacker_news", "transit", "sf_courts", "pathfindher"],
 }
 
 _AI = {
@@ -66,7 +66,7 @@ _AI = {
         "Supported analysis tied to $1M+ in revenue by connecting campaign efficiency, customer behavior, and automated decision workflows across display ads and SEM/PPC channels.",
         "Built trigger-based automation workflows for lead scoring and segmentation, increasing email engagement by 12% and cutting response time by 24 hours.",
     ],
-    "project_order": ["transit", "hacker_news", "pathfindher", "sf_courts"],
+    "project_order": ["hacker_news", "transit", "sf_courts", "pathfindher"],
 }
 
 _GROWTH = {
@@ -98,7 +98,7 @@ _GROWTH = {
         "Drove $400K revenue uplift by optimizing marketing spend through rigorous A/B testing of display ads and SEM/PPC keywords, presenting findings to leadership to inform budget reallocation decisions.",
         "Designed end-to-end webinar funnel achieving 25% lead conversion lift; translated user behavior insights into a website optimization roadmap driving 8% improvement in the acquisition funnel.",
     ],
-    "project_order": ["transit", "hacker_news", "pathfindher", "sf_courts"],
+    "project_order": ["hacker_news", "transit", "sf_courts", "pathfindher"],
 }
 
 _DATA = {
@@ -130,7 +130,7 @@ _DATA = {
         "Built Tableau dashboards combining GA4, Salesforce, and campaign data to monitor traffic, leads, conversions, and revenue trends &mdash; reduced weekly manual reporting time by 90%.",
         "Analyzed A/B test and campaign performance to identify higher-converting channels, contributing to $400K revenue uplift and 40% ROI improvement; partnered cross-functionally to analyze funnel drop-offs and inform website optimization.",
     ],
-    "project_order": ["transit", "hacker_news", "pathfindher", "sf_courts"],
+    "project_order": ["hacker_news", "transit", "sf_courts", "pathfindher"],
 }
 
 _ROLES = {"ai": _AI, "gr": _GROWTH, "dt": _DATA, "growth": _GROWTH, "data": _DATA}
